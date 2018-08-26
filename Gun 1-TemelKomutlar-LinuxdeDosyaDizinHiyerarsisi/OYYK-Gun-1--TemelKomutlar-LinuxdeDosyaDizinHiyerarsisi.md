@@ -189,13 +189,13 @@ ls komutu için seçtiğim iki opsiyonla başlayalım.
   - Bu komut ise uzun listeler.
 
   <p align="center">
-  	<img alt="gnu" src="img/man_ls4.png">
+  	<img alt="gnu" src="img/man_ls4.PNG">
   </p>
 
   - iki ve ikiden fazla opsiyonu aynı anda kullanabiliriz. Bu kullanım şekilleri aşşağıdaki gibi olabilr.
 
   <p align="center">
-  	<img alt="gnu" src="img/man_ls5.png">
+  	<img alt="gnu" src="img/man_ls5.PNG">
   </p>
 
 ---
