@@ -185,6 +185,12 @@ ls komutu için seçtiğim iki opsiyonla başlayalım.
   <center>
     ![gnu](img/man_ls_3.1.PNG)
   </center>
+
+  <p align="center">
+  	![deneme](img/man_ls_3.1.PNG)
+  </p>
+
+
 - İkinci opsiyonumuz ise **-l** opsiyonu.
   - Bu komut ise uzun listeler.
 
