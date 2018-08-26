@@ -8,8 +8,7 @@
   - Basit çözümler kolay değiştirilebilir. Çevik olma açısından gereklidir.
 
 ## Linuxde Dosya Dizin Hiyerarşisi:
-
-- GNU Linux sistemlerde bir dosya dizin hiyerarşisi vardır. Ve bunu en üstünde "/" yani **root (kök)** bulunur bu tüm sistemin referans noktasıdır.
+- GNU Linux sistemlerde bir dosya dizin hiyerarşisi vardır. Ve bunu en üstünde **"/"** yani **root (kok)** bulunur bu tüm sistemin referans noktasıdır.
 
 - Öncelikle kafaları çok karıştıran bir problemi çözüp anlatımımıza öyle devam edelim.
   - dizin nedir? Dizin = klasör = folder = directory
@@ -17,36 +16,82 @@
 
   fakat bunla beraber GNU Linux de her dizin de aslında birer dosyadır.
 
-- **"/" root - kök dizini**
+- **"/" root - kok dizini**
   - Tüm dizinlerin üstünde bulunan dizindir. Tüm dizinler burdan dallanarak devam eder.
 
-  - **/bin** = Sisteminin temel komutlarının bulunduğu binari dizinidir.
-      - Birçok yararlı komut /bin klasörü altındadır.*cat, mkdir, cp, ls, mv, rm* vb. temel komutların hepsini burada bulabilirsiniz.
-  - **/etc** = Sistemin ayar dosylarının olduğu dizindir.
-    - Sisteme dair bütün yapılandırma, bu klasör veya bu klasörün alt klasörlerinde bulunur. Yapılandırma dosyası, bir programın işlemlerini kontrol etmek için kullanılan lokal bir dosyadır; durağandır ve çalıştırılmak için değildir.
-  - **/home** = Kullanıcıların kayıtlı dosyalarını, kişisel ayarlarını vb. içeren ev dizinleridir.
-    - Windows'taki Documents and Settings'e benzetebiliriz.
-    - Her bir yeni kullanıcı için alt dizin olarak altına oluşturulur.
-          - home ---> hasantezcan  
-              |-----> boratanrikulu
-  - **/var** = Sistem değişkenleri sakalar.
-    - Log dosyaları, e-mail ve printer kuyrukları gibi değişken sistem bilgilerini barındırır. Sisteminize dair tutulan log'ları buradan görebilir; güvenlik durumunu buradan kontrol edebilirsiniz.
-  - **/lib** = kütüphane dosyaları bulunur.
-    - Kernel modülleri ve paylaşılan kütüphane dosyaları bu klasörde bulunur. Var olan çekirdek modüllerini /lib/modules/[versiyon_numarasi] içersinde bulabilirsiniz.
-  - **/opt** = Üçüncü parti programların kurlduğu dizindir.
-          /opt
-          |-----> chromium
+- **/bin** = Sisteminin temel komutlarının bulunduğu binarı dizinidir.
+    - Birçok yararlı komut /bin klasörü altındadır.***cat, mkdir, cp, ls, mv, rm*** vb. temel komutların hepsini burada bulabilirsiniz.
+
+- **/etc** = Sistemin ayar dosylarının olduğu dizindir.
+  - Sisteme dair bütün yapılandırma, bu klasör veya bu klasörün alt klasörlerinde bulunur. Yapılandırma dosyası, bir programın işlemlerini kontrol etmek için kullanılan lokal bir dosyadır; durağandır ve çalıştırılmak için değildir.
+
+- **/home** = Kullanıcıların kayıtlı dosyalarını, kişisel ayarlarını vb. içeren ev dizinleridir.
+  - Windows'taki Documents and Settings'e benzetebiliriz.
+  - Her bir yeni kullanıcı için alt dizin olarak altına oluşturulur.
+  ```
+  home ---> haşantezcan  
+  |-----> boratanrıkulu
+  ```
+
+- **/var** = Sistem değişkenleri saklar.
+  - Log dosyaları, e-mail ve printer kuyrukları gibi değişken sistem bilgilerini barındırır. Sisteminize dair tutulan log'ları buradan görebilir; güvenlik durumunu buradan kontrol edebilirsiniz.
+
+- **/lib** = Kütüphane dosyaları bulunur.
+  - Kernel modülleri ve paylaşılan kütüphane dosyaları bu klasörde bulunur. Var olan çekirdek modüllerini /lib/modules/[versiyon_numarası] içersinde bulabilirsiniz.
+
+- **/opt** = Üçüncü parti programların kurlduğu dizindir.
+  ```
+  /opt
+  |-----> chromium
+  ```
 
 - Linux bir sistemde çalışırken unutulmaması gerek en önemli şeylerden birde sürekli bir dizinde olduğunuzdur.
 
         !! Sürekli bir dizinin içindeyiz
 
-- Bir dosyanın yeri tarif ederken kullanıdğımız iki türlü yol vardır. Bunlar Tam Yol ve Göreceli Yol dur.
+- Bir dosyanın yeri tarif ederken kullanıdğimiz iki turlu yol vardır. Bunlar ***Tam Yol*** ve ***Göreceli Yol*** dur.
 
   - **Tam Yol :** Herzaman root dizininden başlar ve hedef gösterdiğimiz dizine kadar devam eder.
-Bu komutu hangi dizinde olursak olalım çalıştırdığımızda sonuç alırız. Çünkü bu tarif hiç bir zaman değişmez. Bunun nedeni de referans aldığı ilk yolun root olamsıdır.
+Bu komutu hangi dizinde olursak olalım çalıştırdığımızda sonuç alırız. Çünkü bu tarif hiç bir zaman değişmez. Bunun nedeni de referans aldığı ilk yolun root olamsidir.
 
   - **Göreceli Yol :** Bu tarifin herzaman geçerliliği yoktur. Bulunulan komut referans alınılarak hedefe ulaşılmaya çalışılır. Anlık doğru yol olrak kabul edilir.
+
+
+----
+  ### ***Soru Cevap Kısmı***
+
+  > Doruk Fişek'in ders esnasında sorduğu sorulardan bazıları..
+
+  - "**/home/hasatezcan/.bashrc**" dizinini silersek ne olur?
+
+    ***Global tanımlı*** olarak bulunan **/etc/.bashrc** dizininden çalışmaya devam eder.
+
+  - Ayar dosyaları ***/etc*** içinde mevcutken neden /boot altında da ayar dosyaları bulunuyor?
+  >. . .
+
+  - ***/var*** dizini ne için var?
+
+    Home dizini kullanıcıların dosyalarını depolarken, /var dizini içinde de programların oluşturduğu veriler tutulur.
+
+    **Örnek:**
+    - bir veri tabanın ürettiği veriler ***/var*** içinde tutuluyor.
+    - log'lar var dizini altında tutuluyor.
+
+  - ***/opt*** dizini neden var?
+
+    Windows mantığı ile geliştirilimiş programlar Unıx dosya dizin hiyerarşisine uymazlar. bu şekilde geliştirilen prgramları lınux /opt dizinide atar ve binevi onlardan kurtulmuş olur.
+
+  - Sistemdeki tüm kulanıcıların ev dizini ***/home*** altında peki neden root kullancısının ev dizini direk ***/*** (yani root dizini altında) ?
+  >. . .
+
+  - Normalde root altında bulunan /bin ve /lib dışında /usr içinde de yine bu dizinler var peki neden bu dizinler varlar?
+  >. . .
+
+  - ***/bin*** - ***/sbin*** - ***/etc/bin*** - ***/etc/sbin*** nedir bu bin dizinleri...?
+  >. . .
+
+  - ***/lib*** ve ***/lib64*** olmak üzere iki farklı klasör mevcut iken neden ***/bin*** ve ***/bin64*** diye iki farklı dizin mevcut değil?
+  >. . .
 
 -----
 
@@ -108,7 +153,9 @@ foto
   ```
 
 <center>
-![gnu](img/man_ls_1.png)
+![gnuIlkFoto](../img/man_ls_1.png)    
+
+<img alt="gnuIlkFotoIkinciYol" src="/img/man_ls_1.png">  
 
 ![gnu](img/man_ls_2.png)
 </center>
