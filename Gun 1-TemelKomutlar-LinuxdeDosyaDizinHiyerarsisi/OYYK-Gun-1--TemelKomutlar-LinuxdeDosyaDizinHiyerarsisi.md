@@ -49,6 +49,8 @@
 
         !! Sürekli bir dizinin içindeyiz
 
+>Daha detaylı bir kaynak arayanlar için ["tldp.org-Linux-Filesystem-Hierarchy"](https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/index.html)
+
 - Bir dosyanın yeri tarif ederken kullanıdğimiz iki turlu yol vardır. Bunlar ***Tam Yol*** ve ***Göreceli Yol*** dur.
 
   - **Tam Yol :** Herzaman root dizininden başlar ve hedef gösterdiğimiz dizine kadar devam eder.
