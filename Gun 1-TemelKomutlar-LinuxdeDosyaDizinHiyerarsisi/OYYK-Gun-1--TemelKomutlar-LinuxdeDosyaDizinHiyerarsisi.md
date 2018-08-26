@@ -151,14 +151,12 @@ foto
   ```
   man ls
   ```
-
-<center>
-![gnuIlkFoto](../img/man_ls_1.png)    
-
-<img alt="gnuIlkFotoIkinciYol" src="/img/man_ls_1.png">  
-
-![gnu](img/man_ls_2.png)
-</center>
+  <p align="center">
+    <img alt="gnu" src="img/man_ls_1.png">
+  </p>
+  <p align="center">
+  	<img alt="gnu" src="img/man_ls_2.png">
+  </p>
 
 Burada da görüldüğü gibi tüm detaylar açıkca belirtilmiş. Öncelikle komutun adı, anatomisi, ve açıklama kısmında da komutla ilgili tüm detaylar. işte tam burda opsiyonlara (OPTION) giriş yapıyoruz.
 
@@ -182,27 +180,23 @@ ls komutu için seçtiğim iki opsiyonla başlayalım.
   ```
   - Peki ne işe yarar bu **"-a"** bakmış olduğumuz dizin içindeki gizli dosyalar dahil tüm dosyaları bize gösterir.
 
-  <center>
-    ![gnu](img/man_ls_3.1.PNG)
-  </center>
-
   <p align="center">
-  	<img alt="DENEMEEEE" src="img/man_ls_3.1.PNG">
+  	<img alt="gnu" src="img/man_ls_3.1.PNG">
   </p>
 
 
 - İkinci opsiyonumuz ise **-l** opsiyonu.
   - Bu komut ise uzun listeler.
 
-  <center>
-  ![gnu](img/man_ls4.png)
-  </center>
+  <p align="center">
+  	<img alt="gnu" src="img/man_ls4.png">
+  </p>
 
   - iki ve ikiden fazla opsiyonu aynı anda kullanabiliriz. Bu kullanım şekilleri aşşağıdaki gibi olabilr.
 
-  <center>
-  ![gnu](img/man_ls5.png)
-  </center>
+  <p align="center">
+  	<img alt="gnu" src="img/man_ls5.png">
+  </p>
 
 ---
 **> Kaynakça**

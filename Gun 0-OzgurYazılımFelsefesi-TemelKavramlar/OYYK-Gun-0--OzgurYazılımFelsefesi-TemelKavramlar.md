@@ -76,9 +76,9 @@ Bir çok lisans vardır Bunlar özgür yazılım lisanları da olabilir özel m�
   Bu lisansın tek şartı istediğin her şeyi yapabilmenizdir. :D
 
 **Bunların dışında Tescilli Yazılım Lisansları(Proprietary software licenses) da vardır.**
-<center>
-![Software_Categories_expanded](img/Software_Categories_expanded.svg)
-</center>
+<p align="center">
+  <img alt="Software_Categories_expanded" src="img/Software_Categories_expanded.svg">
+</p>
 
 ### **Bir yazılımım var ve buna GPL almak istiyorum. Nereye başvuracağım?**
 
@@ -123,9 +123,9 @@ Herkesin kapalı kaynak kod yazdığı ve açık kaynak kod yazmaya bir idailist
   **GNU Manifestosu(Bildirisi)** o zamana kadar söylenenlerden çok farklı şeylerden bahsediyordu. Richard Stallman, önce GNU'nun ne olduğunu açıklayan bir giriş yaptı. GNU'nun açılımı nedir sorusuna **(What is GNU?)**; GNU, Unix değildir **(GNU's Not Unix!)** diye basit bir cevap verdi.
 
   İngilizce bir kelime olan GNU, **öküz başlı antilop demektir.** GNU'nun logosu da, bu Afrika antilobundan gelmektedir. Richard Stallman'sa, GNU'yu rekürsif (yinelemeli - tekrarlamalı) şekilde, **GNU's Not Unix!** şeklinde açıklamıştır.
-<center>
-![Richard-Stallman](img/Richard-Stallman.jpg)
-</center>
+<p align="center">
+  <img alt="Richard-Stallman" src="img/Richard-Stallman.jpg">
+</p>
 - GNU projesi, Unix'e benzer ama Unix olmayan açık kaynak bir işletim sistemi geliştirme amacındaydı. Buna göre, Unix programlarını çalıştırmakla beraber daha fazlasını yapacak bir sistem oluşturulacaktı. Proje çok kısa sürede, açık kaynak dağıtılan yüzlerce programı içerir hâle geldi. Zaman içinde bu rakam binlerce projeye ulaştı. **GNU/Linux'de** bu projelerden biridir.
 
 - Richard Stallman, özgür yazılım çalışmalarına daha rahat devam edebilmek için MIT'deki görevinden istifa etti. Kendini sadece açık kaynak kodlu çalışmalara verdi.
@@ -144,9 +144,9 @@ Richard Stallman'ın kişisel sitesi : [http://www.stallman.org](http://www.stal
   Dağıtımlar kullanım amaçlarına göre şekillenir ve bu yönde geliştirilirler.
 
   Örneğin siber güvenlik alanıyla ilgilenen kullanıcıların "parrot" ya da "Kali Linux" dağıtımlarını tercih etmesinin en temel sebebi budur.
-  <center>
-  ![linux-distros](img/linux-distros.png)
-  </center>
+  <p align="center">
+    <img alt="linux-distros" src="img/linux-distros.png">
+  </p>
   Siz de ilgi alanınıza göre şekillenmiş bir dağıtımı ya da gündelik yaşam için hazırlanmış bir daüıtımı bilgisayarınıza kurarak kullanabilirsiniz.
 
   Ayrıca bazı dağıtımlar ücretli olabilir "RHEL" dağıtımı ücretli bir dağıtımdır ve şirketlere servis sağladığı için şirketler bu dağıtımı REDHAT şirketinin destek hizmeti ile birlikte satın alırlar. Fakat bu dağıtımda özgür yazılım olduğundan "CentOs" dağıtımı birebir "RHEL" dağıtımını alıp sadece ismini ve logosunu değiştirip ücretsiz şekilde dağıtmıştır. Ama buna rağmen hizmet çok önemli bir faktör olduğundan şirketler RHEL'i tercih etmekdedirler.
@@ -174,10 +174,9 @@ Richard Stallman'ın kişisel sitesi : [http://www.stallman.org](http://www.stal
 4. Creative Commons
 5. Özgür kitaplar
 6. Free software free society
-<center>
-![wikipedia](img/wikipedia.jpg)
-</center>
-
+<p align="center">
+  <img alt="wikipedia" src="img/wikipedia.jpg" height="300">
+</p>
 ### **Özgür yazılım bir gerekliliktir! ve Özgür yazılımı niçin tercih etmeliyiz?**
 
 - Çünkü sizin haklarınızı engellemez. Hukiki kurnazlıklarala hazırlanmış yasal dayatmalarla, sizleri 24 saat izleyip, özel hayatınıza müdahele etmez. Arka planda ne olduğunu bilirsiniz. Sizden gizli bir şeyler yapıp, sizin özel bilgilerinizi çalmaz. Çünkü herşey şeffaftır.

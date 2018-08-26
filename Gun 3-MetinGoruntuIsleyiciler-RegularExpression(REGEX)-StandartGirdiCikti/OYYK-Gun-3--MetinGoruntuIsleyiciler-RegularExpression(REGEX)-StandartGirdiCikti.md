@@ -76,7 +76,9 @@ $ less /etc/passwd
   mehmed
   kemal
   ```
-  ![grep-color-sbin](img/grep-color-sbin.png)  
+  <p align="center">
+    <img alt="grep-color-sbin" src="img/grep-color-sbin.png">
+  </p>
 
  Birden fazla döküman içinde arama yapmak için:
   ```
@@ -89,18 +91,19 @@ $ less /etc/passwd
 >> "grep" çok daha detaylı bir araçtır dahası için..
 [gnu.org/software/grep/manual](https://www.gnu.org/software/grep/manual/grep.html)
 
+
 ---
 ### Regular Expression - REGEX
 
 ***^...*** - Şapka işaretinden sonra gelen string ile başlayan kayıtları, getirir.
-<center>
-![grep_sapka](img/grep-sapka.png)
-</center>
+<p align="center">
+  <img alt="grep_sapka" src="img/grep-sapka.png">
+</p>
 
 ***...$*** - Dolar işaretinden önce yazılanlar ile biten satırları yazdırır.
-<center>
-![grep-dolar.png](img/grep-dolar.png)
-</center>
+<p align="center">
+  <img alt="grep-dolar.png" src="img/grep-dolar.png">
+</p>
 
 > "regular expression"lar çok detaylı bir konudur.. bunun için hazılanmış çok detaylı bir anlaatım zaten mevcut [using-grep-regular-expressions](https://www.digitalocean.com/community/tutorials/using-grep-regular-expressions-to-search-for-text-patterns-in-linux)
 
@@ -111,9 +114,10 @@ cut -d ":" -f 3 /etc/passwd
 > ***-d*** - delimineter(ayırıcı) kendinden sonraki işareti ayırıcı olrak kullanır.
 ***-f sayı*** - fields - ayrılan bölmelerin arasında verilen numaraya uygun olan sütünü getirir. sayılar 7,5 denerek de iki tane girilebilir.
 
-<center>
-![cut.png](img/cut.png)
-</center>
+<p align="center">
+  <img alt="cut.png" src="img/cut.png">
+</p>
+
 
 \*  - Herhangi bir karakterin yerine geçer. Ve adet sınırı yok
 
@@ -122,14 +126,14 @@ cut -d ":" -f 3 /etc/passwd
 **tr** herhangi bir karakteri herhangi bir karakter ile değiştir.
 
 **uniq** - Tekrar eden satırları gizler..
-<center>
-![uniq](img/uniq.png)
-</center>
+<p align="center">
+  <img alt="uniq" src="img/uniq.png">
+</p>
 
 **sort** - Dosya içindeki satırları sıralamak için vardır..
-<center>
-![sort](img/sort.png)
-</center>
+<p align="center">
+  <img alt="sort" src="img/sort.png">
+</p>
 
 **wc** - Sayı sayacı...
 ```
@@ -142,9 +146,9 @@ $ wc meyveler
 ```
 
 ## Standart Girdi Çıktı
-<center>
-![stdInAndOutt.png](img/stdInAndOutt.png)
-</center>
+<p align="center">
+  <img alt="stdInAndOutt.png" src="img/stdInAndOutt.png">
+</p>
 
 - Linux sistemlerde başarılı şekilde çalıştırılan komut sonrası ekrana yazılan değer ***standart çıktı(stdout)*** dır. Hatalı çalıştırılan komut sonrası terminal üzerinde gördüğümüz mesaj ise ***standart hata(stderr)*** yı oluşturmaktadır.
 
