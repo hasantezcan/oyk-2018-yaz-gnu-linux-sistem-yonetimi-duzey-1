@@ -123,19 +123,26 @@ cut -d ":" -f 3 /etc/passwd
 
 ***?*** - Her karakterin yerine geçebilir ama sadece bir tanesi(adet) için.
 
-**tr** herhangi bir karakteri herhangi bir karakter ile değiştir.
+- **tr** herhangi bir karakteri herhangi bir karakter ile değiştir.
 
-**uniq** - Tekrar eden satırları gizler..
+- **uniq** - Tekrarlanan stringleri *tek defa* yazar (Tekrar eden satırları gizler..)
+> ***-D*** - sadece tekrar edenler yazılır....
+
 <p align="center">
   <img alt="uniq" src="img/uniq.png">
 </p>
 
-**sort** - Dosya içindeki satırları sıralamak için vardır..
+- **sort** - Dosya içindeki satırları sıralamak için vardır..
 <p align="center">
   <img alt="sort" src="img/sort.png">
 </p>
 
-**wc** - Sayı sayacı...
+  >***uniq*** komutu birbirinden ayrı satırlarda çalışmaz. Bu yüzden öncelikle **sort** ile listeleriz sonrasında **uniq** ile tekilleştiririz.
+  ```BASH
+  cat a.txt | sort | uniq
+  ```
+
+- **wc** - Sayı sayacı...
 ```
 $ wc meyveler
 9 9 61 meyveler
