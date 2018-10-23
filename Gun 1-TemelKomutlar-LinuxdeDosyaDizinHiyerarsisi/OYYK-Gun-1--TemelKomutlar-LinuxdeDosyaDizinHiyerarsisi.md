@@ -183,7 +183,7 @@ ls komutu için seçtiğim iki opsiyonla başlayalım.
   - Peki ne işe yarar bu **"-a"** bakmış olduğumuz dizin içindeki gizli dosyalar dahil tüm dosyaları bize gösterir.
 
   <p align="center">
-  	<img alt="gnu" src="img/man_ls_3.1.PNG">
+  	<img alt="gnu" src="img/man_ls_3.1.png">
   </p>
 
 
@@ -191,13 +191,13 @@ ls komutu için seçtiğim iki opsiyonla başlayalım.
   - Bu komut ise uzun listeler.
 
   <p align="center">
-  	<img alt="gnu" src="img/man_ls4.PNG">
+  	<img alt="gnu" src="img/man_ls4.png">
   </p>
 
   - iki ve ikiden fazla opsiyonu aynı anda kullanabiliriz. Bu kullanım şekilleri aşşağıdaki gibi olabilr.
 
   <p align="center">
-  	<img alt="gnu" src="img/man_ls5.PNG">
+  	<img alt="gnu" src="img/man_ls5.png">
   </p>
 
 ---
