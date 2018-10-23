@@ -4,17 +4,17 @@
 
 #### >Yazılımın özgürlüğü kavramı:
 
-### **Özgür Yazılım Nedir?**
+### **Özgür Yazılım Felsefesi Nedir?**
 
-- “Özgür yazılım” bir özgürlük meselesidir, fiyat değil.
+- “Özgür yazılım felsefesi” bir özgürlük meselesidir, fiyat değil.
 Bu slogan ingilizcede *free* sözcüğünün hem ücretsiz hem de özgür manasına gelmesinden ortaya çıkıyor.
 ```
 To understand the concept, you should think of “free” as in “free speech,” not as in “free beer”
 ```
 
-- Özgür yazılım insanları öğrenmeye, öğrendiklerini öğretmeye, kısıtlı ömrümüzde kazandığımız bilgileri gelecek nesillere bilgi birikimi olrak bırakmaya, bir defa yapılmış bir şeyin yapımı için gereken tekniği tekrar tekrar bulunmasına gerek bırakmamamya teşvik eder.
+- Özgür yazılım felsefesi insanları öğrenmeye, öğrendiklerini öğretmeye, kısıtlı ömrümüzde kazandığımız bilgileri gelecek nesillere bilgi birikimi olrak bırakmaya, bir defa yapılmış bir şeyin yapımı için gereken tekniği tekrar tekrar bulunmasına gerek bırakmamaya teşvik eder.
 
-  Kısacası Özgür Yazılım **tüm insanlığa** hizmet eder, yanlızca bir grup insanın **cebine** değil.
+  Kısacası Özgür Yazılım Felsefesi **tüm insanlığa** hizmet eder, yanlızca bir grup insanın **cebine** değil.
 
 ### **Bir Yazılım Nasıl Özgür Yazılım Olur?**
 
