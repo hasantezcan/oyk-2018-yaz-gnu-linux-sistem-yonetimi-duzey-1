@@ -41,6 +41,12 @@
 
 **CTRL + D** : Kabuk oturmunu kapatır. ***-logout -exit***
 
+**CTRL + A** : Komutun başına gider.
+
+**CTRL + D** : Komutun sonuna gider.
+
+**CTRL + C** : Güncel işlemi sonlandırır.
+
 ## Metin Editörleri
 
  Dosyaların içine yazı yazmamızı sağlarlar. En yaygın kulanılan metin editorü ***"vim"***dir.
@@ -86,9 +92,9 @@ vim dokuman_adi
 
 - Yapıştırmak için >> **p**
 
-- Kopyalamk için >> **yy**
+- Kopyalamak için >> **yy**
 
->Visiual modda da bu işlemleri yapabilirsiniz.
+>Visiual mod'da da bu işlemleri yapabilirsiniz.
 
 
 ## Ortam değişkenleri (Environment Variables)

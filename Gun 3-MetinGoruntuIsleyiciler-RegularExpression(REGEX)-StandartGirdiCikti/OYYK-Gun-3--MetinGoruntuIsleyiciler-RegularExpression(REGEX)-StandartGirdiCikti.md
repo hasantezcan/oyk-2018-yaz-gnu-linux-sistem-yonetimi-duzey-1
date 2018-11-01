@@ -28,12 +28,12 @@ Terminal öğretisi
 $ more /etc/passwd
 ```
 
-- **less** - Vim'e benzer bir yapısı vardır. less ile dosyalar içerisinde gezebilirsiniz. Vim de kullanılan çoğu komut lessde de çalışır. Metin içi arama yapabilirsiniz. Less'i vimden ayıran fark less'in sadece dosya görüntüleyicisi olmasıdır. Herhangi bir dosya düzenleme işlemi yapamaz.
+- **less** - Vim'e benzer bir yapısı vardır. less ile dosyalar içerisinde gezebilirsiniz. Vim'de kullanılan çoğu komut less'de de çalışır. Metin içi arama yapabilirsiniz. Less'i vim'den ayıran fark less'in sadece dosya görüntüleyicisi olmasıdır. Herhangi bir dosya düzenleme işlemi yapamaz.
 ```
 $ less /etc/passwd
 ```
 
-- ***head*** -  Dosyanın başından 10 satırı bize gösteriri. Ayrıca baştan göstereceği satır sayısını da ayarlamamız için bir parametresi bulunmaktadır.
+- ***head*** -  Dosyanın başından 10 satırı bize gösterir. Ayrıca baştan göstereceği satır sayısını da ayarlamamız için bir parametresi bulunmaktadır.
   ```
   $ head /etc/passwd
   ```
@@ -43,13 +43,13 @@ $ less /etc/passwd
   ```
 > Dosyanın başından ilk 2 satırı gösterir.
 
-- ***tail*** - Dosyanın sonundan 10 satırı gösterir. -n parametresi ile bu sayıyı değilştirme imkanımız da vardır.
+- ***tail*** - Dosyanın sonundan 10 satırı gösterir. -n parametresi ile bu sayıyı değiştirme imkanımız da vardır.
   ```
   $ tail /etc/passwd
   ```
 
   ```
-  $ tail -n2 /etc/passwd
+  $ tail -n 2 /etc/passwd
   ```
 > Dosyanın başından ilk 2 satırı gösterir.
 
@@ -186,7 +186,11 @@ Try 'mkdir --help' for more information.
 ```
 Yukarıda gördüğünüz gibi komut ismini yanlış yazdığımda veya olmayan bir parametre vermek istediğimde hata mesajı ile karşılaşıyorum. Bu mesaj da bizim standart hata(stderr)mızıoluşturmaktadır.
 
-**Standart girdi, çıktı ve hatayı nasıl yönlendirme:**
+Standart error'un output'dan ayrılmasının nedeni, hata mesajlarının düzgün şekilde kullanıcıya verilebilmesidir. Olası bir hata durumunda output zarar görseydi, output içinde verilmeye çalışılan hata mesajı da zarar görecekti.
+
+Genel olarak stdout komutun kendisi tarafından, stderr işletim sistemi tarafından kullanıcıya verilir.
+
+**Standart girdi, çıktı ve hatayı yönlendirme:**
 
 Standart bir çıktıyı ekranda görmek istemiyorumda bir dosyaya yönlendirmek istiyorum;
 
@@ -211,22 +215,30 @@ $ lss -la 2>deneme.txt
 ```
 yukarıdaki komut ile dönen hata mesajını deneme.txt isimli dosyamıza yönlendirmiş olduk.   
 
-Burda kullanmış olduğumuz **"2"** ***stderr***'u temsil eder yani aslında bash'e diyoruz ki **"lss -la"** komutunu çalıştır. Sonra bu komudun **stderr** çıktısını al, ve **"deneme.txt"** içine ***yaz.***
+Burda kullanmış olduğumuz **"2"** ***stderr***'u temsil eder. Yani aslında bash'e **"lss -la"** komutunu çalıştır diyoruz. Sonra bu komutun **stderr** çıktısını al, ve **"deneme.txt"** içine ***yaz.***
 
 Ama siz o **"2"** yerine **"1"** yazsaydınız şuan elde ettiğimiz sonuçu elde edemezdiniz. Çünkü bu sefer bash'e:  git **"lss -la"** komutunun **"stdout"** çıktısını ***"deneme.txt"*** ye bas demiş olurdunuz. Fakat öyle bir çıktı olmadığından **bash** dosyaya herhangi bir şey basamazdı ve ***boş*** bir dosya oluşturmuş olurdunuz.
 
 **Bir komutun tüm çıktılarını bir dosyaya yazmak:**
 ```
-head /etc/passwdd &>> p.txt
+head /etc/passwd &>> p.txt
 
 grep -R --color hasantezcan /home &>> nerdeyimBen.txt
 ```
 Bu komut sayesinde bir komutdan gelebilecek tüm çıktıları bir dosya içine yazmış oluyoruz..
 
 **Yönlendirme Olayı Nerelerde Kullanılabilir?**  
-Mesela bir serverda çokca hata vermesi muhtemel bir komut çalıştıracağız ama bu hataları şimdi değilde sonra okumak istiyoruz bu gibi bir durumda yönlendirmeler kullanılabilir.
+Mesela bir serverda çokça hata vermesi muhtemel bir komut çalıştıracağız ama bu hataları şimdi değilde sonra okumak istiyoruz bu gibi bir durumda yönlendirmeler kullanılabilir.
+
+Son kullanıcı olarak dosya işlemlerimizi metin editörleri ile rahatlıkla yapabiliyoruz, fakat sunucu tarafında uygulamaları otomatize ederken, komutlarla bir dosyaya bilgi yazdırmamız gerekebiliyor.
 
  > Bu konu ile ilgili detaylı başka bir yazıda burada mevcut. [linux-redirecting-piping-nedir](https://siberoloji.github.io/linux-redirecting-piping-nedir/)
+
+**Pipe(|)(Alt gr + -) ile yönlendirme**
+Solundaki komutun output'unu, sağındaki komuta input olarak iletir
+ör: cat /etc/passwd | grep "hasan"  (grep'in input olarak bir dosya alması gerekiyordu, bunun yerine dosyanın içeriğini okuyup grep'e input olarak veriyoruz.)
+ör: cat /etc/passwd | wc -l
+
 
 **>Komplike bir yönlendirme örneği..(Yanlış Olabilir..)**
 ```
