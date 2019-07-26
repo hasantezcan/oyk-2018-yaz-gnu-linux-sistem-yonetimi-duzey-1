@@ -25,7 +25,7 @@
 - **/etc** = Sistemin ayar dosylarının olduğu dizindir.
   - Sisteme dair bütün yapılandırma, bu klasör veya bu klasörün alt klasörlerinde bulunur. Yapılandırma dosyası, bir programın işlemlerini kontrol etmek için kullanılan lokal bir dosyadır; durağandır ve çalıştırılmak için değildir.
 
-- **/home** = Kullanıcıların kayıtlı dosyalarını, kişisel ayarlarını vb. içeren ev dizinleridir. Kullanıcıların kendilerine ayrılan çalışma alanıdır. 
+- **/home** = Kullanıcıların kayıtlı dosyalarını, kişisel ayarlarını vb. içeren ev dizinleridir. Kullanıcıların kendilerine ayrılan çalışma alanıdır.
   - Windows'taki Users'a benzetebiliriz.
   - Her bir yeni kullanıcı için alt dizin olarak altına oluşturulur.
   ```
@@ -125,6 +125,12 @@ Bu komutu hangi dizinde olursak olalım çalıştırdığımızda sonuç alırı
 
 - **cd** - (*change directory*) **>>** Dizin değiştirmemizi sağlar. **[cd ../ ya da cd klasör_adi/]**
  - Sıra geldi yer değiştirmeye "pwd" ile nerdeyiz onu öğrendik "ls" ile nerelere gidebiliriz onu öğrendik. şimdi de harekete geçiyoruz. **[cd /klasör_adi]** diyerekden dizinin içine girebiliriz. Peki nasıl geri çıkıcaz? Geri çıkmak için de **[cd ..]** komutunu kullanıyoruz. **Neden çıkmak kelimesini kullandığıma sonra gelicem.**
+
+ - **[cd -]** Bu komut sizi çalıştığınız son dizine geri döndürecektir.
+
+ <p align="center">
+   <img alt="gnu" src="img/ls-.png">
+ </p>
 
 - **touch** - ( ) **>>** Asıl görevi dosyanın son değiştirilme tarihini güncel ana eşitlemektir. Pratikte, boş dosya oluşturmak için kullanıyoruz. **[touch dosya_adı]**
   - Bu komutla dosya oluşturuyoruz. Aynı anda birden fazla dosya da oluşturmak mümkün.
