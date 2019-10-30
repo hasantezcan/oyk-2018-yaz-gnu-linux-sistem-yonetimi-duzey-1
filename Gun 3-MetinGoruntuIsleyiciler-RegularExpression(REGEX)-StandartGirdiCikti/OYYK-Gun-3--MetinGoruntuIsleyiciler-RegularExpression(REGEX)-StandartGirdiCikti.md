@@ -43,7 +43,7 @@ $ less /etc/passwd
   ```
 > Dosyanın başından ilk 2 satırı gösterir.
 
-- ***tail*** - Dosyanın sonundan 10 satırı gösterir. -n parametresi ile bu sayıyı değiştirme imkanımız da vardır.
+- ***tail*** - Dosyanın sonundan 10 satırı gösterir. -n parametresi ile bu sayıyı değiştirme imkanımız da vardır. Aynı zamanda, -f parametresi ile dosyadaki değişiklikleri canlı olarak izlememizi sağlar. 
   ```
   $ tail /etc/passwd
   ```
@@ -51,6 +51,11 @@ $ less /etc/passwd
   ```
   $ tail -n 2 /etc/passwd
   ```
+
+  ```
+  $ tail -f /var/log/sys
+  ```
+
 > Dosyanın başından ilk 2 satırı gösterir.
 
 - ***tac*** - cat'in tam tersidir. Yani dosyayı tersden yazar. Son satırı ilk satır ilk satırı son satır olcak şekilde metni tepe taslak eder.
