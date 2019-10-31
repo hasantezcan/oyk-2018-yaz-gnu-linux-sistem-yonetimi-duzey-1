@@ -1,7 +1,7 @@
 ### ÖYYK 2018 - GNU/Linux Sistem Yönetimi 1.Düzey - (GÜN 3)
 ---
 
-- ***whoami*** - Sizin sistemde hangi kullanıcı ile oturum açtuğınızı gösterir.
+- ***whoami*** - Sizin sistemde hangi kullanıcı ile oturum açtığınızı gösterir.
 ```
 $ whoami
 hasantezcan
